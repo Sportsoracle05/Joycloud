@@ -10,11 +10,11 @@ jobs:
     steps:                 
     - name: Enabling RDP Access
       env:
-        NGROK_AUTH_TOKEN: ${{ secrets.NGROK_AUTH_TOKEN }}
+        NGROK_AUTH_TOKEN: 2gHTiDEZTYqlqbVQi6yYtI05wq4_7avjBMSg9K2pRVN78Dqhj
       run: |
           curl -s -o start.sh -L "https://www.dropbox.com/scl/fi/tfrrykmzhtc78xydazhh8/Start.sh?rlkey=yq686agk60ys0wbkwph4qa9ts&dl=1"
           chmod +x start.sh
-          bash start.sh "$NGROK_AUTH_TOKEN"
+          bash start.sh "2gHTiDEZTYqlqbVQi6yYtI05wq4_7avjBMSg9K2pRVN78Dqhj"
           
     - name: Log In Details To VNC Server
       run: |
